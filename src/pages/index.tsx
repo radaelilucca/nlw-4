@@ -4,6 +4,7 @@ import {
   ExperienceBar,
   CompletedChallenges,
   Countdown,
+  ChallengeBox,
 } from "../components";
 
 import S from "../style/pages/Home.module.scss";
@@ -23,7 +24,9 @@ export default function Home() {
           <CompletedChallenges />
           <Countdown />
         </div>
-        <div>right</div>
+        <div>
+          <ChallengeBox />
+        </div>
       </section>
     </div>
   );

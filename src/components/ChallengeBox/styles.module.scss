@@ -1,0 +1,120 @@
+@import "../../style/base/colors";
+
+.container {
+  height: 100%;
+  border-radius: 5px;
+  background: $white;
+
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  &Active {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    header {
+      color: $blue;
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-top: 1.5rem;
+
+      padding: 0 2rem 1.5rem;
+      border-bottom: 1px solid $gray-line;
+    }
+
+    main {
+      flex: 1;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      strong {
+        font-size: 2rem;
+        font-weight: 600;
+        color: $title;
+        margin: 1.5rem 0 1rem;
+      }
+
+      p {
+        line-height: 1.5rem;
+      }
+    }
+
+    footer {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+
+      margin-bottom: 1.5rem;
+
+      button {
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border: 0;
+        border-radius: 5px;
+
+        color: $white;
+        font-size: 1rem;
+        font-weight: 600;
+        transition: filter 0.2s;
+
+        &:hover {
+          filter: brightness(0.9);
+        }
+      }
+    }
+
+    &FailedButton {
+      background: $red;
+    }
+
+    &CompleteButton {
+      background: $green;
+    }
+  }
+
+  &NotActive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    strong {
+      font-size: 1.5rem;
+      font-weight: 500;
+      line-height: 1.4;
+      max-width: 70%;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      display: flex;
+
+      align-items: center;
+      line-height: 1.6;
+      max-width: 70%;
+      margin-top: 3rem;
+
+      text-align: left;
+
+      color: $text-light;
+
+      img {
+        margin-right: 1.5rem;
+        max-height: 4rem;
+      }
+    }
+  }
+}
