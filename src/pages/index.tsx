@@ -1,3 +1,4 @@
+import Head from "next/head";
 import {
   Profile,
   ExperienceBar,
@@ -10,6 +11,10 @@ import S from "../style/pages/Home.module.scss";
 export default function Home() {
   return (
     <div className={S.container}>
+      <Head>
+        <title>Início - move.it</title>
+      </Head>
+
       <ExperienceBar />
 
       <section>
