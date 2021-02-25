@@ -4,7 +4,7 @@ import { ChallengesContext } from "../../contexts/ChallengesContext";
 import S from "./styles.module.scss";
 
 const ChallengeBox: React.FC = () => {
-  const { activeChallenge } = useContext(ChallengesContext);
+  const { activeChallenge, resetChallenge } = useContext(ChallengesContext);
 
   return (
     <div className={S.container}>
@@ -31,7 +31,7 @@ const ChallengeBox: React.FC = () => {
             <button
               type="button"
               className={S.containerActiveFailedButton}
-              onClick={() => {}}
+              onClick={resetChallenge}
             >
               Falhei
             </button>
