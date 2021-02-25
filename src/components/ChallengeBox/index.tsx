@@ -4,7 +4,9 @@ import { ChallengesContext } from "../../contexts/ChallengesContext";
 import S from "./styles.module.scss";
 
 const ChallengeBox: React.FC = () => {
-  const { activeChallenge, resetChallenge } = useContext(ChallengesContext);
+  const { activeChallenge, resetChallenge, completeChallenge } = useContext(
+    ChallengesContext
+  );
 
   return (
     <div className={S.container}>
@@ -19,7 +21,7 @@ const ChallengeBox: React.FC = () => {
         </div>
       ) : (
         <div className={S.containerActive}>
-          <header>Ganhe {activeChallenge.ammount} xp</header>
+          <header>Ganhe {activeChallenge.amount} xp</header>
 
           <main>
             <img src={`icons/${activeChallenge.type}.svg`} alt="" />
@@ -38,7 +40,7 @@ const ChallengeBox: React.FC = () => {
             <button
               type="button"
               className={S.containerActiveCompleteButton}
-              onClick={() => {}}
+              onClick={completeChallenge}
             >
               Completei
             </button>
