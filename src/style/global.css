@@ -32,19 +32,6 @@ a {
   }
 }
 
-.container {
-  height: 100vh;
-  max-width: 992px;
-  margin: 0 auto;
-
-  display: flex;
-  flex-direction: column;
-}
-
-
-
-
-
 :root {
   --white:#FFF;
   --background:#f2f3f5;
