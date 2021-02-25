@@ -2,7 +2,7 @@ import React from "react";
 
 import S from "./styles.module.scss";
 
-export function ExperienceBar() {
+const ExperienceBar: React.FC = () => {
   return (
     <header className={S.experienceBar}>
       <span>0 xp</span>
@@ -18,4 +18,6 @@ export function ExperienceBar() {
       <span>600 xp</span>
     </header>
   );
-}
+};
+
+export default ExperienceBar;
