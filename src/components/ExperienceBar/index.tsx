@@ -1,6 +1,6 @@
 import React from "react";
 
-import S from "./ExperienceBar.module.css";
+import S from "./styles.module.css";
 
 export function ExperienceBar() {
   return (
