@@ -1,4 +1,9 @@
-import { Profile, ExperienceBar, CompletedChallenges } from "../components";
+import {
+  Profile,
+  ExperienceBar,
+  CompletedChallenges,
+  Countdown,
+} from "../components";
 
 import S from "../style/pages/Home.module.scss";
 
@@ -11,6 +16,7 @@ export default function Home() {
         <div>
           <Profile />
           <CompletedChallenges />
+          <Countdown />
         </div>
         <div>right</div>
       </section>
