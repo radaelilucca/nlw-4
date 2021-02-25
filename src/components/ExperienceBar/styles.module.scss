@@ -1,0 +1,32 @@
+@import "../../style/base/colors";
+
+.experienceBar {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+
+  span {
+    font-size: 1rem;
+  }
+
+  &Progress {
+    flex: 1;
+    height: 4px;
+    border-radius: 4px;
+    margin: 0 1.5rem;
+    background: $gray-line;
+    position: relative;
+
+    &Indicator {
+      height: 4px;
+      border-radius: 4px;
+      background: $green;
+    }
+  }
+}
+
+.currentExperience {
+  position: absolute;
+  top: 12px;
+  transform: translateX(-50%);
+}
