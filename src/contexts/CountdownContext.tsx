@@ -42,7 +42,6 @@ export const CountdownProvider = ({ children }: CountdownProviderProps) => {
         setTimer((prevState) => prevState - 1);
       }, 1000);
     } else if (isActive && timer === 0) {
-      console.log("finished");
       setActive(false);
       setHasFinished(true);
       startNewChallenge();

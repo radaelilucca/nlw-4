@@ -2,11 +2,7 @@ import { ChallengesProvider } from "../contexts/ChallengesContext";
 import "../style/global.scss";
 
 function MyApp({ Component, pageProps }) {
-  return (
-    <ChallengesProvider>
-      <Component {...pageProps} />
-    </ChallengesProvider>
-  );
+  return <Component {...pageProps} />;
 }
 
 export default MyApp;
