@@ -30,7 +30,7 @@ interface ChallengesProviderProps {
 }
 export const ChallengesContext = createContext({} as ChallengesContextData);
 
-export const ChallengesProvider: React.FC = ({
+export const ChallengesProvider = ({
   children,
   ...rest
 }: ChallengesProviderProps) => {
